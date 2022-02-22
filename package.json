@@ -1,0 +1,32 @@
+{
+    "name": "hardhat-project",
+    "scripts": {
+        "compile": "hardhat compile",
+        "deploy": "npx hardhat run scripts/deploy.js --network",
+        "upgrade": "npx hardhat run scripts/upgrade.js --network",
+        "deploy_storage": "npx hardhat run scripts/deploy_storage.js --network",
+        "upgrade_storage": "npx hardhat run scripts/upgrade_storage.js --network",
+        "deploy_test_tokens": "npx hardhat run scripts/deploy_tokens.js --network",
+        "deploy_test": "npx hardhat run scripts/deploy_test.js --network",
+        "test": "npx hardhat test"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.2",
+        "@nomiclabs/hardhat-etherscan": "^2.1.4",
+        "@nomiclabs/hardhat-waffle": "^2.0.1",
+        "@nomiclabs/hardhat-web3": "^2.0.0",
+        "@openzeppelin/contracts": "^4.2.0",
+        "chai": "^4.3.4",
+        "dotenv": "^10.0.0",
+        "ethereum-waffle": "^3.4.0",
+        "ethers": "^5.4.2",
+        "hardhat": "^2.5.0"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts-upgradeable": "^4.4.0",
+        "@openzeppelin/hardhat-upgrades": "^1.10.0",
+        "@openzeppelin/upgrades-core": "^1.10.0",
+        "prettier": "^2.4.1",
+        "solidity-coverage": "^0.7.17"
+    }
+}
